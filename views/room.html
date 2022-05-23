@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chat</title>
+    <title>Chat Room</title>
     <link href="/style.css" rel="stylesheet">
     <link href="/image.svg" rel="icon">
   </head>
@@ -12,13 +12,15 @@
 			<br>
 		</header>
 		<div id="menu">
-      <button class="btn" onclick="newRoom()">New Ticket </button><br><br>
+      <button class="btn" onclick="newRoom()">New Chat Room</button><br><br>
+      <button class="btn" onclick="location.href = '/'">Go to Main Room</button><br><br>
 			<button id="btn" class="btn" onclick="location.href = '/logout'">Logout</button>
       <br><br><br>
       <h3>People</h3><br>
       <div id="people"><br></div>
 		</div>
 		<main>
+      <h2>You are in the room <%= room %></h2><br>
 			<h3>Shortcut to Send: ⌘ + Enter/Ctrl + Enter</h3>
 			<br><br>
 		</main>
@@ -31,7 +33,8 @@
     <script src="/script.js"></script>
     <script>
       var name = "<%= name %>";
+      var room = "<%= room %>";
     </script>
-    <script src="/chat.js"></script>
+    <script src="/room.js"></script>
   </body>
 </html>
