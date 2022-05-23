@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+* {
+  outline:none;
+}
+body {
+  background:cyan;
+  font-family: "Roboto";
+  text-align:center;
+}
+form {
+  width:60%;
+  margin-left:20%;
+  margin-right:20%;
+}
+input {
+  font-size:15px;
+  padding:10px;
+  width:80%;
+  font-family:'Roboto';
+}
+input[type="submit"] {
+  background:chartreuse;
+  border:none;
+  height:50px;
+  color:white;
+}
+input[type="submit"]:hover {
+  background:rgb(124, 243, 5);
+  cursor:pointer;
+}
+p a, p a:visited {
+  color:chartreuse;
+  text-decoration:none;
+  font-size:16px;
+}
+p a:hover, p a:active {
+  text-decoration:underline;
+}
