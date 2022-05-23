@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Chat</title>
+
+    <link href="/style.css" rel="stylesheet">
+
+    <link href="/image.svg" rel="icon">
+
+  </head>
+
+  <body>
+
+    <header>
+
+			<img src="/image.svg" id="img" width="50px" draggable="false">			<h1>Chat</h1>
+
+			<br>
+
+		</header>
+
+		<div id="menu">
+
+      <button class="btn" onclick="newRoom()">New Ticket </button><br><br>
+
+			<button id="btn" class="btn" onclick="location.href = '/logout'">Logout</button>
+
+      <br><br><br>
+
+      <h3>People</h3><br>
+
+      <div id="people"><br></div>
+
+		</div>
+
+		<main>
+
+			<h3>Shortcut to Send: ⌘ + Enter/Ctrl + Enter</h3>
+
+			<br><br>
+
+		</main>
+
+		<footer>
+
+			<textarea placeholder="Type your message here..." autofocus></textarea>
+
+			<button id="send">Send</button>
+
+		</footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/modal.js"></script>
+
+    <script src="/script.js"></script>
+
+    <script>
+
+      var name = "<%= name %>";
+
+    </script>
+
+    <script src="/chat.js"></script>
+
+  </body>
+
+</html>
